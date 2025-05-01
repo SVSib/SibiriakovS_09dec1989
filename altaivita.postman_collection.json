@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "fda3ef38-97bc-4832-a372-28b8e9c9ac35",
+		"name": "altaivita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37925659"
+	},
+	"item": [
+		{
+			"name": "add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/?srsltid=AfmBOopLHDyE2VSyABvTx4-JEY5SyRpuRAonN_esDz6RhBm5M7pfYRL9&digiSearch=true&term=%D0%BC%D0%B5%D0%B4%20%D1%81%20%D0%BC%D1%83%D0%BC%D0%B8%D0%B5&params=%7Csort%3DDEFAULT"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=sobn71rjoeu8tb9ke1fgptq701; CID=5d04309412a5cd6fe39aedfc68198459; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _ym_uid=1745323237111852536; _ym_d=1745323237; _ga=GA1.1.1790324159.1745323237; _ym_isad=2; _dvs=0:m9sge49v:e10tucat5nnQX6Lde3nQrYDLYWuTVsVG; digi_uc=|s:174532:5648; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _ym_visorc=w; dSesn=26581835-5d8d-d6ea-e429-33ee305270f1; _ga_2JB65Y3D22=GS1.1.1745325739.2.1.1745329777.0.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=7186&this_listId=&quantity=1&LANG_key=ru&S_wh=1&S_CID=5d04309412a5cd6fe39aedfc68198459&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php",
+					"protocol": "https",
+					"host": [
+						"altaivita",
+						"ru"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php' \\\r\n  -H 'Accept: */*' \\\r\n  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'PHPSESSID=sobn71rjoeu8tb9ke1fgptq701; CID=5d04309412a5cd6fe39aedfc68198459; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _ym_uid=1745323237111852536; _ym_d=1745323237; _ga=GA1.1.1790324159.1745323237; _ym_isad=2; _dvs=0:m9sge49v:e10tucat5nnQX6Lde3nQrYDLYWuTVsVG; digi_uc=|s:174532:5648; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _ym_visorc=w; dSesn=26581835-5d8d-d6ea-e429-33ee305270f1; _ga_2JB65Y3D22=GS1.1.1745325739.2.1.1745329777.0.0.0' \\\r\n  -H 'Origin: https://altaivita.ru' \\\r\n  -H 'Referer: https://altaivita.ru/?srsltid=AfmBOopLHDyE2VSyABvTx4-JEY5SyRpuRAonN_esDz6RhBm5M7pfYRL9&digiSearch=true&term=%D0%BC%D0%B5%D0%B4%20%D1%81%20%D0%BC%D1%83%D0%BC%D0%B8%D0%B5&params=%7Csort%3DDEFAULT' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw 'product_id=7186&this_listId=&quantity=1&LANG_key=ru&S_wh=1&S_CID=5d04309412a5cd6fe39aedfc68198459&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID='"
+			},
+			"response": []
+		},
+		{
+			"name": "new_quantity",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "CID=add85f4c35e25afb74864465af466edf; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9y37oqw:odhmK3nOnupW9Zc~VAAomwail1YHm_pw; _userGUID=0:m9y37oqw:odhmK3nOnupW9Zc~VAAomwail1YHm_pw; _ym_uid=1745663901528648804; _ym_d=1745663901; PHPSESSID=voj1vkvqkocnb5oeb6bmj3sm02; dSesn=d57ccba3-df2d-9351-d28c-53c957a6b28a; _dvs=0:ma2fomfn:pCBo5EcFpLq_Z1kkUHCJYMzyCwoLB9Yj; searchStartTime=1745926710178; _ym_isad=2; _ym_visorc=w; smartbanner_used=close; DIGI_CARTID=92288103678; digi_uc=|v:174592:7186|s:174592:5648"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/?digiSearch=true&term=%D0%BC%D0%B5%D0%B4%20%D1%81%20%D0%BC%D1%83%D0%BC%D0%B8%D0%B5&params=%7Csort%3DDEFAULT"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=7186&this_listId=&quantity=1&LANG_key=ru&S_wh=1&S_CID=5d04309412a5cd6fe39aedfc68198459&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php",
+					"protocol": "https",
+					"host": [
+						"altaivita",
+						"ru"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php' \\\r\n  -H 'Accept: */*' \\\r\n  -H 'Accept-Language: ru,en;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -H 'Cookie: CID=add85f4c35e25afb74864465af466edf; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9y37oqw:odhmK3nOnupW9Zc~VAAomwail1YHm_pw; _userGUID=0:m9y37oqw:odhmK3nOnupW9Zc~VAAomwail1YHm_pw; _ym_uid=1745663901528648804; _ym_d=1745663901; PHPSESSID=voj1vkvqkocnb5oeb6bmj3sm02; dSesn=d57ccba3-df2d-9351-d28c-53c957a6b28a; _dvs=0:ma2fomfn:pCBo5EcFpLq_Z1kkUHCJYMzyCwoLB9Yj; searchStartTime=1745926710178; _ym_isad=2; _ym_visorc=w; smartbanner_used=close; DIGI_CARTID=92288103678; digi_uc=|v:174592:7186|s:174592:5648' \\\r\n  -H 'Origin: https://altaivita.ru' \\\r\n  -H 'Referer: https://altaivita.ru/?digiSearch=true&term=%D0%BC%D0%B5%D0%B4%20%D1%81%20%D0%BC%D1%83%D0%BC%D0%B8%D0%B5&params=%7Csort%3DDEFAULT' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  -H 'sec-ch-ua: \"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw 'product_id=2814&this_listId=&quantity=1&LANG_key=ru&S_wh=1&S_CID=add85f4c35e25afb74864465af466edf&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID='"
+			},
+			"response": []
+		},
+		{
+			"name": "del",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/?srsltid=AfmBOopLHDyE2VSyABvTx4-JEY5SyRpuRAonN_esDz6RhBm5M7pfYRL9&digiSearch=true&term=%D0%BC%D0%B5%D0%B4%20%D1%81%20%D0%BC%D1%83%D0%BC%D0%B8%D0%B5&params=%7Csort%3DDEFAULT"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=sobn71rjoeu8tb9ke1fgptq701; CID=5d04309412a5cd6fe39aedfc68198459; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _ym_uid=1745323237111852536; _ym_d=1745323237; _ga=GA1.1.1790324159.1745323237; _ym_isad=2; digi_uc=|s:174532:5648; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _ga_2JB65Y3D22=GS1.1.1745325739.2.1.1745329981.0.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=7186&LANG_key=ru&S_wh=1&S_CID=5d04309412a5cd6fe39aedfc68198459&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altaivita.ru/engine/cart/delete_products_from_cart_preview.php",
+					"protocol": "https",
+					"host": [
+						"altaivita",
+						"ru"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"delete_products_from_cart_preview.php"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://altaivita.ru/engine/cart/delete_products_from_cart_preview.php' \\\r\n  -H 'Accept: */*' \\\r\n  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'PHPSESSID=sobn71rjoeu8tb9ke1fgptq701; CID=5d04309412a5cd6fe39aedfc68198459; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _userGUID=0:m9sge49v:fXoO0bHNWW0ndF4Zu9xzMcQaZESmtAIg; _ym_uid=1745323237111852536; _ym_d=1745323237; _ga=GA1.1.1790324159.1745323237; _ym_isad=2; digi_uc=|s:174532:5648; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _ga_2JB65Y3D22=GS1.1.1745325739.2.1.1745329981.0.0.0' \\\r\n  -H 'Origin: https://altaivita.ru' \\\r\n  -H 'Referer: https://altaivita.ru/?srsltid=AfmBOopLHDyE2VSyABvTx4-JEY5SyRpuRAonN_esDz6RhBm5M7pfYRL9&digiSearch=true&term=%D0%BC%D0%B5%D0%B4%20%D1%81%20%D0%BC%D1%83%D0%BC%D0%B8%D0%B5&params=%7Csort%3DDEFAULT' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw 'product_id=7186&LANG_key=ru&S_wh=1&S_CID=5d04309412a5cd6fe39aedfc68198459&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID='"
+			},
+			"response": []
+		}
+	]
+}
