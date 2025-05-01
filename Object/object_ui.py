@@ -1,6 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
+from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
@@ -33,10 +34,9 @@ class Object_UI:
                 Удаление товара из корзины
         """
 
-        delete_prod = self._driver.find_element(By.CSS_SELECTOR, "div[class='basket__delete js-item-delete']")
+        delete_prod = self._driver.find_element(By.CSS_SELECTOR, ".basket__delete.js-item-delete")
         delete_prod.click()
-        WebDriverWait(self._driver, 10).until_not(EC.visibility_of_element_located(
-        (By.XPATH, "div[class='basket__delete js-item-delete']")))
+
 
     def enter_to_cart(self):
         """
@@ -50,8 +50,7 @@ class Object_UI:
         cart_enter.click()
         self._driver.implicitly_wait(10)
         webdriver.ActionChains(self._driver).send_keys(Keys.ESCAPE).perform()
-        WebDriverWait(self._driver, 10).until(EC.visibility_of_element_located(
-            (By.XPATH, "//div[@class='basket__delete js-item-delete']//i[@class='fal fa-times']")))
+        sleep(1)
 
 
     def count_prod(self):

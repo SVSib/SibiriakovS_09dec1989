@@ -11,7 +11,7 @@ def test_add_prod(driver):
     with allure.step("Вводим имя искомого продукта"):
         object_ui.enter_search("мед с мумие")
     with allure.step("Добавляем первый продукт в корзину"):
-        object_ui.add_prod("//div[@class='digi-products']//div[2]//div[1]//div[4]//div[1]//div[1]//button[1]")
+        object_ui.add_prod("//div[@class='digi-products-grid digi-products-grid_horde']//div[1]//div[1]//div[4]//div[1]//div[1]//button[1]")
     with allure.step("Добавляем второй продукт в корзину"):
         object_ui.add_prod("//div[@id='digi-shield']//div[3]//div[1]//div[4]//div[1]//div[1]//button[1]")
     with allure.step("Открываем корзину"):
@@ -29,7 +29,7 @@ def test_delete_prod(driver):
     with allure.step("Вводим имя искомого продукта"):
         object_ui.enter_search("мед с мумие")
     with allure.step("Добавляем первый продукт в корзину"):
-        object_ui.add_prod("//div[@class='digi-products']//div[2]//div[1]//div[4]//div[1]//div[1]//button[1]")
+        object_ui.add_prod("//div[@class='digi-products-grid digi-products-grid_horde']//div[1]//div[1]//div[4]//div[1]//div[1]//button[1]")
     with allure.step("Добавляем второй продукт в корзину"):
         object_ui.add_prod("//div[@id='digi-shield']//div[3]//div[1]//div[4]//div[1]//div[1]//button[1]")
     with allure.step("Открываем корзину"):
